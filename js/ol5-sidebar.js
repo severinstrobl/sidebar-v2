@@ -19,34 +19,34 @@ export default class Sidebar extends Control {
             target: options.target
         });
 
-        // Attach .sidebar-left/right class
-        element.classList.add('sidebar-' + options.position);
+        // Attach .ol-sidebar-left/right class
+        element.classList.add('ol-sidebar-' + options.position);
 
-        // Find sidebar > div.sidebar-content
+        // Find ol-sidebar > div.ol-sidebar-content
         for (i = element.children.length - 1; i >= 0; i--) {
             child = element.children[i];
             if (child.tagName === 'DIV' &&
-                    child.classList.contains('sidebar-content')) {
+                    child.classList.contains('ol-sidebar-content')) {
                 this._container = child;
             }
         }
 
-        // Find sidebar ul.sidebar-tabs > li, sidebar .sidebar-tabs > ul > li
-        this._tabitems = element.querySelectorAll('ul.sidebar-tabs > li, .sidebar-tabs > ul > li');
+        // Find ol-sidebar ul.ol-sidebar-tabs > li, sidebar .ol-sidebar-tabs > ul > li
+        this._tabitems = element.querySelectorAll('ul.ol-sidebar-tabs > li, .ol-sidebar-tabs > ul > li');
         for (i = this._tabitems.length - 1; i >= 0; i--) {
             this._tabitems[i]._sidebar = this;
         }
 
-        // Find sidebar > div.sidebar-content > div.sidebar-pane
+        // Find ol-sidebar > div.ol-sidebar-content > div.ol-sidebar-pane
         this._panes = [];
         this._closeButtons = [];
         for (i = this._container.children.length - 1; i >= 0; i--) {
             child = this._container.children[i];
             if (child.tagName == 'DIV' &&
-                    child.classList.contains('sidebar-pane')) {
+                    child.classList.contains('ol-sidebar-pane')) {
                 this._panes.push(child);
 
-                var closeButtons = child.querySelectorAll('.sidebar-close');
+                var closeButtons = child.querySelectorAll('.ol-sidebar-close');
                 for (var j = 0, len = closeButtons.length; j < len; j++) {
                     this._closeButtons.push(closeButtons[j]);
                 }

@@ -136,29 +136,29 @@
   .sidebar-right .sidebar-close {
     left: 0; }
 
-.sidebar {
+.ol-sidebar {
   background-color: rgba(255, 255, 255, 0.4); }
   @media (min-width: 768px) {
-    .sidebar {
+    .ol-sidebar {
       border: 3px solid transparent;
       border-radius: 4px; } }
 
-.sidebar-left {
+.ol-sidebar-left {
   border-right: 3px solid transparent; }
 
-.sidebar-right {
+.ol-sidebar-right {
   border-left: 3px solid transparent; }
 
-.sidebar-tabs {
+.ol-sidebar-tabs {
   overflow: hidden; }
   @media (min-width: 768px) {
-    .sidebar-tabs {
+    .ol-sidebar-tabs {
       border-radius: 4px 0 0 4px; }
-      .collapsed .sidebar-tabs {
+      .collapsed .ol-sidebar-tabs {
         border-radius: 4px; } }
 
 @media (min-width: 768px) {
-  .sidebar-content {
+  .ol-sidebar-content {
     border-radius: 0 4px 4px 0; } }
 
 .sidebar-left ~ .sidebar-map .olControlZoom,
