@@ -3,9 +3,9 @@ $sidebar-inner-border-radius: 2px !default;
 
 @import 'ol-base';
 
-.sidebar-left {
+.ol-sidebar-left {
 
-    & ~ .sidebar-map {
+    & ~ .ol-sidebar-map {
 
         .ol-zoom, .ol-scale-line {
             margin-left: $tab-size + $sidebar-border-width * 2;
@@ -28,7 +28,7 @@ $sidebar-inner-border-radius: 2px !default;
         }
     }
 
-    &.collapsed ~ .sidebar-map {
+    &.collapsed ~ .ol-sidebar-map {
 
         .ol-zoom, .ol-scale-line {
             @media(min-width:$threshold-sm) {
@@ -39,9 +39,9 @@ $sidebar-inner-border-radius: 2px !default;
 }
 
 
-.sidebar-right {
+.ol-sidebar-right {
 
-    & ~ .sidebar-map {
+    & ~ .ol-sidebar-map {
 
         .ol-rotate,
         .ol-attribution,
@@ -67,7 +67,7 @@ $sidebar-inner-border-radius: 2px !default;
         }
     }
 
-    &.collapsed ~ .sidebar-map {
+    &.collapsed ~ .ol-sidebar-map {
 
         .ol-rotate,
         .ol-attribution,

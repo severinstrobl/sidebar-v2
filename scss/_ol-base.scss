@@ -12,9 +12,11 @@ $tab-active-bg: #0074d9 !default;
 
 $move-map-in-xs: false !default;
 
+$css-scope: "ol-" !default;
+
 @import 'base';
 
-.sidebar {
+.ol-sidebar {
     background-color: $sidebar-bg;
 
     @media(min-width:$threshold-sm) {
@@ -23,15 +25,15 @@ $move-map-in-xs: false !default;
     }
 }
 
-.sidebar-left {
+.ol-sidebar-left {
     border-right: $sidebar-border;
 }
 
-.sidebar-right {
+.ol-sidebar-right {
     border-left: $sidebar-border;
 }
 
-.sidebar-tabs {
+.ol-sidebar-tabs {
     overflow: hidden;
 
     @media(min-width:$threshold-sm) {
@@ -43,7 +45,7 @@ $move-map-in-xs: false !default;
     }
 }
 
-.sidebar-content {
+.ol-sidebar-content {
     @media(min-width:$threshold-sm) {
         border-radius: 0 $sidebar-inner-border-radius $sidebar-inner-border-radius 0;
     }

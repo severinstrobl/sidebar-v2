@@ -1,6 +1,8 @@
 $sidebar-margins: 8px !default;
 $sidebar-inner-border-radius: 4px !default;
 
+$css-scope: "" !default;
+
 @import 'ol-base';
 
 .sidebar-left {
